@@ -1,0 +1,743 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  
+  
+ 
+}
+
+.strike {
+  text-decoration: line-through;
+}
+
+@import 'styles/_variables.scss';
+
+@media (max-width: 960px) {
+
+Body {
+  overflow-x: hidden; 
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  h2 {
+    font-family: $H1style;
+    font-size: 36px;
+    width: 288px;
+  }
+
+  p{
+    font-size: 14px;
+    font-family: $pstyle;
+    text-align: justify;
+    width: 288px;
+  }
+
+  .button {
+    background-color: $buttoncolor;
+      width: 288px;
+      text-align: center;
+      font-size: 16px;
+      font-family: $pstyle;
+      padding: 16px 0px;
+
+  }
+  /** Menu **/
+
+  .nav{
+    width: auto;
+    height: 2,45vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    z-index: 2;
+   
+
+    img {
+      width:"3vw";
+      height:"3vh";
+      margin-left: 6vw;
+      margin-top: -4vh;
+      }
+      
+      i {
+        width: 9vw;
+        height: 9vh;
+        margin-top: 2vh;
+        
+      }
+          
+      input[type=checkbox]{
+        display: none;
+      }
+  
+      input[type=checkbox]:checked ~ nav {
+        transform: translateY(344px);
+      }
+      
+    }
+  
+   nav {
+        position: absolute;
+        background-color: $primarycolor;
+        width: auto;
+        height: 224px;
+        top: -300px;
+        transition: all .5s;
+        z-index: -1;
+        
+          ul {
+            list-style: none;
+          }
+          li {
+            font-family: 'IBM Plex Mono', monospace;
+          }
+          a {
+            display: block;
+            padding-top: 17px;
+            padding-bottom: 16px;
+            color: white;
+            margin-left: 16px;
+          }
+  }
+
+  .container1 {
+    color: $primarytextcolor;
+    position: relative;
+    margin-right: 16px;
+    margin-left: 16px;
+    z-index: -5;
+    min-width: 320px;
+    max-width: 500px;
+
+  
+      
+    h1 {
+        font-family: 'IBM Plex Sans', sans-serif;
+        color: $primarytextcolor;
+        font-size: 5vh;
+        width: 65vw;
+        height: 84px;
+        position: absolute;
+        display: grid;
+        grid-template-columns: auto ;
+        margin-bottom: 36px;
+        margin-top: 13px;
+      }
+
+      
+
+    p {
+      height: 66px;
+      position: absolute;
+      top: 129px;
+      margin-bottom: 36px;
+      
+    }
+
+    .button {
+      position: absolute;
+      top: 231px;
+    }
+  
+
+
+   
+  
+  
+  
+  
+  
+  }
+
+  .container2 {
+    background-color: $primarycolor;
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    top: 330px;
+    transform: skewY(-6deg);
+  }
+
+  .container3 {
+    width: 100%;
+    height: 1300px;
+    background-color: $primarycolor;
+    position: relative;
+    top: 80px;
+    
+
+    h2 {
+      color: white;
+      margin-bottom: 21px;
+      margin-left: 16px;
+      
+    }
+
+    .divspotify {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  
+    
+    }
+
+    .spotify {
+      width: auto;
+      height: 232px;
+      margin-top: 10px;
+      border: none;
+
+    }
+
+    
+  }
+
+
+  .container4{
+    background-color: white;
+    width: 100.5%;
+    height: 200px;
+    margin-top: -50px;
+    transform: skewY(-6deg);
+  }
+
+
+  .container5 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  
+    
+    img {
+      position: absolute;
+      width: auto;
+      height: 519px;
+      margin-top: -300px;
+      margin-bottom: 27px;
+    }
+
+    h2, p {
+      position: relative;
+      top: 250px;
+    }
+
+    p{ 
+      margin-top: 8px;
+      height: 254px;
+    }
+  }
+    
+.container6 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 300px;
+
+  img {
+    width:100%;
+    height: auto;
+  }
+}
+  
+
+.container7 {
+
+  .divitem{
+  position: relative;
+  top: 360px;
+  margin-left: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  
+    img {
+      width: 104px;
+      height: 104px;
+      
+  
+      
+    }
+
+    h2 {
+      margin-bottom: 50px;
+    }
+
+    p {
+      text-align: center;
+      margin-top: 13px;
+      font-family: $font-mono; 
+      margin-bottom: 42px;
+      font-size: 16px;
+    }
+    }
+
+
+}
+
+
+.container8 {
+  background-color: $primarycolor;
+    width: 100%;
+    height: 200px;
+    position: relative;
+    margin-top: 380px;
+    transform: skewY(-6deg);
+}
+
+.container9 {
+  width: 100%;
+  height: 290px;
+  background-color: $primarycolor;
+  position: relative;
+  top: -100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+    h2{
+      position: absolute;
+      color: white;
+      text-align: center;
+      top: 20px; 
+    }
+    .button {
+      margin-top: 186px;
+      }  
+}
+
+
+footer {
+  position: relative;
+  margin-top: -100px;
+  margin-left: 16px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto;
+  grid-template-areas: "hello hello hello hello hello"
+                        
+    
+}
+.footertext {
+  margin-left: 47px;
+  margin-bottom: 16px;
+  margin-top: 24px;
+  grid-area: hello;
+}
+
+.fab {
+  padding: 7px;
+  margin-bottom: 31px;
+}
+
+
+    }
+  }
+
+  /** PC **/
+  
+  @media (min-width: 961px){
+   
+  Body {
+    overflow-x: hidden; 
+
+    h1 {
+      font-size: 50pt;
+      font-family: $H1style;
+    }
+   
+    h2 {
+      font-family: $H1style;
+      font-size: 40pt;
+    }
+
+    p{
+      font-family: $pstyle;
+      font-size: 13pt;
+      text-align: justify;
+    }
+    a {
+      text-decoration: none;
+      color: $primarytextcolor;
+    }
+
+
+
+    .nav {
+      height: 5vh;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-right: 6.2vw;
+      align-items: center;
+    
+
+        .topics {
+          margin-right: 6.2vw;
+        }
+        input, .fas {
+        display: none;
+        }
+      
+        img {
+          width: 4vw;
+          height: 4vh;
+          margin-left: 6.2vw;
+        }
+        a {
+          text-decoration: none;
+          color: black;
+        }
+        a:hover {
+          color: $hovercolor;
+          text-decoration: line-through;
+        }
+        /** testear **/
+        a:active {
+          color: $aactive;
+          text-decoration: line-through;
+        }
+        ul {
+          list-style: none;
+        }
+        li {
+          font-family: $font-mono;
+          font-size: 1vw;
+          color: $primarytextcolor;
+          display: inline-block;
+          padding-left: 3vh;
+        }
+        
+    }
+
+    .container1 {
+      display: flex;
+      flex-direction: column;
+      padding-left: 12.5vw;
+      padding-top: 7.5vw;
+      height: 23vh;
+        p{
+          width: 39.25vw;
+          margin-bottom: 5vh;
+        }
+        .button {
+          position: relative;
+          background-color: $buttoncolor;
+            width: 14.1vw;
+            text-align: center;
+            font-size: 1vw;
+            font-family: $pstyle;
+            padding: 1vh 0px;
+            z-index: 6;
+            font-weight: 500;
+        }
+        .button:hover {
+          background-image: $buttonhcolor;
+        }
+
+
+    }
+
+    .container2 {
+        background-color: $primarycolor;
+        background-image: $divprimarycolorg;
+        width: 100%;
+        height: 31vh;
+        margin-top: 150px;
+        transform: skewY(-6deg);
+        
+    
+    }
+
+    .container3 {
+      width: 100%;
+      background-color: $primarycolor;
+      background-image: $divprimarycolorg;
+      height: 1200px;
+      position: absolute;
+      margin-top: -120px;
+      
+
+        h2 {
+          color: white;
+          margin-left: 12.5vw;
+          margin-top: 3vh;
+          margin-bottom: 1.5vh;
+          grid-area: ep;
+        
+        }
+        .divspotify {
+
+          display: grid;
+          grid-template-columns: 6.2vw 40% 2% 40% 6.2vw;
+          grid-template-rows: 1fr 3vw 1fr;
+          grid-template-areas: "ep ep";
+          position: relative;
+          grid-template-areas:  ". spotify1 . spotify2 ."
+                                " . . . . . "
+                                ". spotify3 . spotify4 .";
+                                
+                                #spotify1 {
+                                  grid-area: spotify1;
+                                }
+                                #spotify2 {
+                                  grid-area: spotify2;
+                                }
+                                #spotify3 {
+                                grid-area: spotify3;
+                              }
+                                #spotify4 {
+                                  grid-area: spotify4;
+                                }
+                              }
+            
+         .spotify {
+           max-width: 100%;
+           width: 100%;
+           min-height: 300px;
+           border: 0;
+         }       
+          
+         }
+
+    .container4 {
+      background-color:white;
+      width: 100.03%;
+      height: 500px;
+      margin-top: 830px;
+      transform: skewY(-6deg);
+    }
+
+    .container5 {
+      margin-left: 12.5vw;
+      
+      
+      .flexcenter {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        top: 100px;
+
+        .imgsize {
+          width: 20vw;
+          height: 45vw;
+          margin-top: -650px;
+          margin-left: 2vw;
+          }
+
+            img {
+            width: auto;
+            height: 660px;
+            position: absolute;
+            
+            }
+            
+
+          p, .h2center{
+          position: absolute;
+          align-self: flex-start;
+          margin-left: 200px;
+         
+          }
+        }
+          p {
+            width: 464px;
+            height: 204px;
+            
+            margin-top: -300px;
+
+          }
+          .h2center {
+            margin-top: -430px;
+          }
+
+
+          #entrevistas {
+           position: absolute;
+            display: flex;
+            flex-direction: row;
+            top: 2100px;
+            
+          }
+
+      
+    }
+    
+    
+
+    .container6 {
+      position: absolute;
+      top: 2200px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+
+          img {
+            width: auto;
+            height: 25.5vw;
+          }
+    }
+
+    .container7 {
+      position: absolute;
+      top: 2600px;
+      h2 {
+        margin-left: 12.5vw;
+        margin-top: 230px;
+      }
+
+      img {
+        display: inline-block;
+        width: 7vw;
+        height: 130px;
+        padding-left: 4.85vw;
+        padding-right: 4.85vw;
+        margin-top: 250px;
+        
+      }
+
+    p{
+      text-align: center;
+      margin-top: 270px;
+    }
+      .divitem {
+        display: grid;
+        margin-top: 30vh;
+        grid-template-columns: 12.5vw 16.2vw 16.2vw 16.2vw 16.2vw 12.5vw;
+        grid-template-rows: 12vh 4vh 15vh 4vh;
+        grid-template-areas:
+          "h2 h2 h2 h2 h2 h2"
+          ". . . . . ."
+          ". item1 item2 item3 item4 ."
+          ". p1 p2 p3 p4 ."
+           ;
+
+           #item1 {
+            grid-area: item1;
+          }
+          #item2 {
+            grid-area: item2;
+          }
+          #item3 {
+            grid-area: item3;
+          }
+          #item4 {
+            grid-area: item4;
+          }
+  
+          #p1 {
+            grid-area: p1;
+          }
+          #p2 {
+            grid-area: p2;
+          }
+          #p3 {
+            grid-area: p3;
+          }
+          #p4 {
+            grid-area: p4;
+            word-spacing: 25vw;
+            word-wrap: break-word;
+          }
+  
+          .h2grid {
+            grid-area: h2;
+          }
+                            }
+        
+        
+     
+
+      
+
+      }
+  
+    .container8 {
+  
+      background-color: $primarycolor;
+      background-image: $divprimarycolorg;
+      width: 100%;
+      height: 300px;
+      margin-top: 1400px;
+      transform: skewY(-6deg);
+   
+      }
+
+    .container9 {
+      position: absolute;
+      background-color: $primarycolor;
+      background-image: $divprimarycolorg;
+      width: 100%;
+      height: 400px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      margin-top: -180px;
+
+
+        h2 {
+          position: absolute;
+          color: white;
+          top: 5vh;
+
+        }
+         .button {
+           position: absolute;
+            background-color: $buttoncolor;
+            width: 22vw;
+            text-align: center;
+            font-size: 1vw;
+            font-family: $pstyle;
+            padding: 1vh 0px;
+            top: 20vh;
+            margin-bottom: 9vh;
+            margin-left: -16vh;
+            font-weight: 500;     
+        }
+
+        .button:hover {
+          background-image: $buttonhcolor;
+        }
+
+        
+
+
+    }
+
+    footer {
+      display: none;
+      max-width: 100%;
+      position: relative;
+      margin-top: 50vh;
+      margin-top: 2.5vh;
+      margin-bottom: 2vh;
+      width: 100%;
+      display: inline-block;
+       .fab{
+        font-size: 1vw;
+        width: 3vw;
+         float: right;      
+       }
+
+       #i1 {
+         margin-right: 6.2vh;
+         
+       
+       }
+        
+       .footertext {
+         margin-left: 6.2vw;
+         font-size: 1vw;
+       }
+         
+
+         
+        
+    }
+  
+}
+}

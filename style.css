@@ -334,6 +334,9 @@
     text-decoration: none;
     color: #060A24;
   }
+  Body .dot {
+    color: #0000EC;
+  }
   Body .nav {
     height: 5vh;
     display: -webkit-box;

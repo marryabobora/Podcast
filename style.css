@@ -49,26 +49,31 @@
             justify-content: space-between;
     background-color: white;
     z-index: 2;
-  }
-  Body .nav img {
-    width: "3vw";
-    height: "3vh";
-    margin-left: 6vw;
-    margin-top: -4vh;
+    position: absolute;
+    top: 0;
+    padding: 20px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: calc(100vw - 50px);
   }
   Body .nav i {
-    width: 9vw;
-    height: 9vh;
-    margin-top: 2vh;
+    display: block;
+    position: relative;
+    top: 0;
+    right: 0;
   }
-  Body .nav input[type=checkbox] {
+  Body .nav nav {
     display: none;
   }
-  Body .nav input[type=checkbox]:checked ~ nav {
+  Body input[type=checkbox] {
+    display: none;
+  }
+  Body input[type=checkbox]:checked ~ #mobile-menu {
     -webkit-transform: translateY(344px);
             transform: translateY(344px);
   }
-  Body nav {
+  Body #mobile-menu {
     position: absolute;
     background-color: #0000EC;
     width: 100%;
@@ -76,15 +81,15 @@
     top: -280px;
     -webkit-transition: all .5s;
     transition: all .5s;
-    z-index: -1;
+    z-index: 1;
   }
-  Body nav ul {
+  Body #mobile-menu ul {
     list-style: none;
   }
-  Body nav li {
+  Body #mobile-menu li {
     font-family: 'IBM Plex Mono', monospace;
   }
-  Body nav a {
+  Body #mobile-menu a {
     display: block;
     padding-top: 17px;
     padding-bottom: 16px;
@@ -349,7 +354,7 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin-right: 6.2vw;
+    margin: 20px 0;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -387,6 +392,9 @@
     color: #060A24;
     display: inline-block;
     padding-left: 3vh;
+  }
+  Body input[type=checkbox], Body #mobile-menu {
+    display: none;
   }
   Body .container1 {
     display: -webkit-box;

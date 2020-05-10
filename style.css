@@ -3,6 +3,7 @@
   margin: 0px;
 }
 
+/**Adicionar X em menu**/
 .strike {
   text-decoration: line-through;
 }
@@ -55,13 +56,18 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: calc(100vw - 50px);
+  }
+  Body .nav .hamburguer {
+    margin-right: 6vh;
   }
   Body .nav i {
     display: block;
     position: relative;
     top: 0;
-    right: 0;
+    right: 50px;
+  }
+  Body .nav #xicon {
+    display: none;
   }
   Body .nav nav {
     display: none;
@@ -72,6 +78,12 @@
   Body input[type=checkbox]:checked ~ #mobile-menu {
     -webkit-transform: translateY(344px);
             transform: translateY(344px);
+  }
+  Body input[type=checkbox]:checked ~ .nav #xicon {
+    display: block;
+  }
+  Body input[type=checkbox]:checked ~ .nav #hamicon {
+    display: none;
   }
   Body #mobile-menu {
     position: absolute;
@@ -104,6 +116,7 @@
     z-index: -5;
     min-width: 320px;
     max-width: 500px;
+    margin-top: 80px;
   }
   Body .container1 h1 {
     font-family: 'IBM Plex Sans', sans-serif;
